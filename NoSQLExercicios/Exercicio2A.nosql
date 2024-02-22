@@ -1,0 +1,1 @@
+db.Livros.find({status: {$ne:'PUBLISH'},pageCount:{$lte:300}},{status: 1, pageCount: 1}).sort({pageCount: 1}).count()

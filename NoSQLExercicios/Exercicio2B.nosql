@@ -1,0 +1,1 @@
+db.Livros.find({ title: {$regex: /MongoDB|SQL Server/} }, {title:1}).count()

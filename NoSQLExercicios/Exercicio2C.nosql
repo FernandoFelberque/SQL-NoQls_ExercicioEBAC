@@ -1,0 +1,1 @@
+db.Livros.find({isbn: {$regex: /^18/}}, {isbn:1}).count()
